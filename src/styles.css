@@ -1,0 +1,83 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.carousel-container {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.carousel-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-image.fade {
+  opacity: 1;
+}
+
+.carousel-image.slide-in-left {
+  transform: translateX(-100%);
+  transition: transform 1s ease-in-out;
+}
+
+.carousel-image.slide-in-right {
+  transform: translateX(100%);
+  transition: transform 1s ease-in-out;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.carousel-button.prev {
+  left: 10px;
+  border-width: 20px 30px 20px 0;
+  border-color: transparent #000 transparent transparent;
+}
+
+.carousel-button.next {
+  right: 10px;
+  border-width: 20px 0 20px 30px;
+  border-color: transparent transparent transparent #000;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: #000;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
