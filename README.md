@@ -24,7 +24,7 @@ To get started with the Image Carousel, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-repo/image-carousel.git
+   git clone https://github.com/chenle228/ImageCarousel.git
 2. **Navigate to the Project Directory**:
    ```bash
    cd ImageCarousel
